@@ -1,0 +1,38 @@
+spring:
+  batch:
+    job:
+      enabled: true # true: 어플리케이션 실행 시 등록된 Job을 실행 / false: 비실행
+      # names: ${job.name:NONE}
+      # names: myJobTaskletOne_Job2
+      names: myJobTwo_Job1
+    jdbc:
+      initialize-schema: always
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      use-new-id-generator-mappings: false
+      show-sql: true
+      properties:
+        hibernate.format_sql: true
+    defer-datasource-initialization: true
+
+  datasource:
+    url: jdbc:mysql://duckbill.cbvuwo5puy0l.ap-northeast-2.rds.amazonaws.com:3306/Quartz?serverTimezone=UTC&characterEncoding=UTF-8
+    username: root
+    password: wjddngus1!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  sql:
+    init:
+       schema-locations: classpath:initsql/schema.sql
+       data-locations: classpath:initsql/data.sql
+       mode: always
+
+    logging:
+      level:
+        org.springframework.web.client: DEBUG
+        org.hibernate.SQL : DEBUG
+        org.hibernate.type : trace

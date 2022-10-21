@@ -1,0 +1,22 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="login_entries">
+        <item>공단기</item>
+        <item>네이버</item>
+    </string-array>
+
+    <string-array name="login_values">
+        <item>gong</item>
+        <item>naver</item>
+    </string-array>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>Reply</item>
+        <item>Reply to all</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>reply</item>
+        <item>reply_all</item>
+    </string-array>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/item_board">
+
+    <TextView
+        android:id="@+id/item_board_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_marginLeft="8sp"
+        android:textSize="16sp"
+        android:fontFamily="@font/baemin_jua"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        tools:text="TITLE" />
+
+    <TextView
+        android:id="@+id/item_board_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:fontFamily="@font/baemin_jua"
+        android:textColor="@color/lbl_name"
+        android:layout_marginLeft="8sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="Contents" />
+
+    <TextView
+        android:id="@+id/item_board_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="11dp"
+        android:fontFamily="@font/baemin_jua"
+        android:layout_marginRight="8sp"
+        android:textAlignment="textEnd"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="Contents" />
+
+</LinearLayout>

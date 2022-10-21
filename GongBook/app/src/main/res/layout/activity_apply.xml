@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_register"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:id="@+id/login_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/baemin_jua"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/apply_main_text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/et_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="@color/input_register_bg"
+            android:fontFamily="@font/baemin_jua"
+            android:hint="@string/hint_id"
+            android:inputType="text"
+            android:text=""
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="@color/input_register_bg"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:text=""
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="@color/input_register_bg"
+            android:fontFamily="@font/baemin_jua"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="#757575" />
+
+        <TextView
+            android:id="@+id/login_select_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/baemin_jua"
+            android:lineSpacingExtra="10dp"
+            android:text="@string/selector_text"
+            android:textAlignment="textStart"
+            android:textColor="#B71C1C"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_selector"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_naver"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/login_selector_naver"
+                android:button="@null"
+                android:checked="false"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+            <RadioButton
+                android:id="@+id/radio_gong"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_selector_connect"
+                android:button="@null"
+                android:checked="false"
+                android:minHeight="48dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_sub_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="@color/input_register_bg"
+            android:fontFamily="@font/baemin_jua"
+            android:hint="@string/hint_sub_id"
+            android:inputType="text"
+            android:text=""
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="#757575" />
+
+        <EditText
+            android:id="@+id/et_sub_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:background="@color/input_register_bg"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="@string/hint_sub_password"
+            android:inputType="textPassword"
+            android:text=""
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textColor="@color/input_register"
+            android:textColorHint="#757575" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_square_light_blue"
+            android:fontFamily="@font/baemin_jua"
+            android:letterSpacing="0.4"
+            android:text="@string/user_register"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/btn_square_light_blue"
+            android:fontFamily="@font/baemin_jua"
+            android:letterSpacing="0.4"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

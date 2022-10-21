@@ -1,0 +1,65 @@
+plugins {
+    id 'org.springframework.boot' version '2.7.2'
+    id 'io.spring.dependency-management' version '1.0.12.RELEASE'
+    id 'java'
+}
+
+group = 'book'
+version = '2.0.3-WORK'
+sourceCompatibility = '11'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+
+    implementation 'org.jetbrains:annotations:23.0.0'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    implementation 'org.projectlombok:lombok:1.18.24'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testCompileOnly 'org.projectlombok:lombok'
+    testAnnotationProcessor 'org.projectlombok:lombok'
+
+    // selenium
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.3.0'
+    // WebDriverManager
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.2.1'
+    //swagger
+    implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
+    // quartz-scheduler
+    implementation group: 'org.quartz-scheduler', name: 'quartz', version: '2.3.2'
+    implementation 'org.springframework.boot:spring-boot-starter-quartz'
+
+    // mail
+    implementation 'org.springframework.boot:spring-boot-starter-mail'
+
+    // Json-simple
+    implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
+    // Jsoup
+    implementation 'org.jsoup:jsoup:1.15.3'
+    // Gson json 변환 라이브러리
+    implementation 'com.google.code.gson:gson:2.9.1'
+    //swagger
+    implementation group: 'io.springfox', name: 'springfox-boot-starter', version: '3.0.0'
+    // FCM Service
+    implementation 'com.google.firebase:firebase-admin:9.0.0'
+    implementation group: 'com.squareup.okhttp3', name: 'okhttp', version: '4.9.3'
+
+    implementation 'org.json:json:20220320'
+
+    // mysql
+    runtimeOnly 'mysql:mysql-connector-java'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

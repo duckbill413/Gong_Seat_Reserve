@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/input_register_bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="12dp"
+        android:contentDescription="@string/gong_main_imag"
+        android:src="@drawable/gongseat_logo" />
+
+    <TextView
+        android:id="@+id/title_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/baemin_jua"
+        android:text="@string/gong_book_system"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/book_seat"
+            android:layout_width="95dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_design"
+            android:fontFamily="@font/baemin_jua"
+            android:text="@string/book_text"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/change_seat"
+            android:layout_width="95dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/button_design"
+            android:fontFamily="@font/baemin_jua"
+            android:text="@string/change_text"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/cancel_seat"
+            android:layout_width="95dp"
+            android:layout_height="56dp"
+            android:background="@drawable/button_design"
+            android:fontFamily="@font/baemin_jua"
+            android:text="@string/cancel_text"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtView_seat_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/baemin_jua"
+        android:text="@string/main_seat_info"
+        android:textColor="@color/lbl_name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtView_seat_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/baemin_jua"
+        android:background="@drawable/textview_main_edge"
+        android:text="@string/no_argument"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/txtView_booked_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/baemin_jua"
+        android:text="@string/main_booked_title"
+        android:textColor="@color/lbl_name"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/txtView_booked_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/baemin_jua"
+        android:background="@drawable/textview_main_edge"
+        android:text="@string/no_argument"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/work_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/baemin_jua"
+        android:minHeight="48dp"
+        android:switchMinWidth="70dp"
+        android:switchPadding="10dp"
+        android:text="@string/work_switch"
+        android:textColor="@color/purple_700"
+        android:textAlignment="center"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+</LinearLayout>

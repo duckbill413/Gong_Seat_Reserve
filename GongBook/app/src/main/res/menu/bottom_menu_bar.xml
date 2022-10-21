@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/tab_schedule"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_timer_blue"
+        android:title="예약"/>
+
+    <item
+        android:id="@+id/tab_seat"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_event_seat_blue"
+        android:title="좌석정보"/>
+
+    <item
+        android:id="@+id/tab_notify"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="알림" />
+
+    <item
+        android:id="@+id/tab_settings"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_blue"
+        android:title="설정"/>
+</menu>

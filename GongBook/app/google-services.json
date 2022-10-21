@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "724182163488",
+    "project_id": "gongbook-ed0a8",
+    "storage_bucket": "gongbook-ed0a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724182163488:android:d32f83c6794c74f199dc45",
+        "android_client_info": {
+          "package_name": "seat.reservation.gongbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724182163488-g0ogddb56j857102mt2m92if4otq5dn5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrKXCLT0VyerFaTu54mNJvbuwpqeUXkHI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724182163488-g0ogddb56j857102mt2m92if4otq5dn5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

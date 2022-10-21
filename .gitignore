@@ -58,3 +58,7 @@ gradle-app.setting
 SeatReservation/src/main/java/book/UserInfo/Users.java
 SeatReservation/src/main/resources/application.properties
 *.apk
+Quartz/quartz/src/main/resources/application.properties
+Quartz/quartz-test/src/main/resources/quartz.properties
+SeatReservation/src/main/resources/application.yml
+SeatReservation/src/main/resources/firebase/firebase_service_key.json
