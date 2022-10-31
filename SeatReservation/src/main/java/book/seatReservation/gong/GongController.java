@@ -27,7 +27,6 @@ import static book.seatReservation.config.response.BaseResponseStatus.*;
 @RequiredArgsConstructor
 public class GongController {
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
-    private final SchedulerService schedulerService;
     private final GongService gongService;
     private final SeatService seatService;
     private final UserService userService;
@@ -100,7 +99,8 @@ public class GongController {
         }
     }
 
-    @Scheduled(cron = "0 9 7 * * ?") // 7시 7~9분까지 1분마다 실행
+    @Scheduled(cron = "0 59 6 * * ?")
+    @Scheduled(cron = "0 9 7 * * ?")
     private void NetUserLoginSchedule() {
         List<User> users = null;
         try {
@@ -118,7 +118,8 @@ public class GongController {
         }
     }
 
-    @Scheduled(cron = "0 10 7 * * ?") // 7시 10~15분까지 1분마다 실행
+    @Scheduled(cron = "0 0 7 * * ?")
+    @Scheduled(cron = "0 10 7 * * ?")
     private void NetUserBookSchedule() {
         List<User> users = null;
         try {
@@ -139,6 +140,7 @@ public class GongController {
     /**
      * WebDriver 해제 및 좌석 예약 결과 메일 및 알림 발송
      **/
+    @Scheduled(cron = "0 1 7 * * ?")
     @Scheduled(cron = "0 11 7 * * ?")
     private void ScheduleWebDriverInit() {
         List<User> users = null;

@@ -186,6 +186,7 @@ public class SeleniumAct {
         } catch (UnhandledAlertException e) {
             alertSkipping(driver);
         } catch (Exception exception) {
+            exception.printStackTrace();
             throw new BaseException(FAILED_TO_CHANGE_SEAT);
         }
 
@@ -195,12 +196,12 @@ public class SeleniumAct {
             alertSkipping(driver);
         }
 
-        String message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"reserve_txt\"]"))).getText();
-        char x = seat.getX();
-        long y = seat.getY();
-        String expectResult = String.format("%c행 %d열 좌석이 예약되었습니다.", x, y);
-        if (!message.equals(expectResult))
-            throw new BaseException(FAILED_TO_CHANGE_SEAT);
+        String message = "좌석 변경 실패";
+        message = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"reserve_txt\"]"))).getText();
+//        char x = seat.getX();
+//        long y = seat.getY();
+//        String expectResult = String.format("%c행 %d열 좌석이 예약되었습니다.", x, y);
+//
         return message;
     }
 
@@ -225,6 +226,7 @@ public class SeleniumAct {
         } catch (UnhandledAlertException e) {
             alertSkipping(driver);
         } catch (Exception exception) {
+            exception.printStackTrace();
             throw new BaseException(FAILED_TO_CANCEL_SEAT);
         }
         try {
@@ -234,14 +236,10 @@ public class SeleniumAct {
         }
 
         String result = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"reserve_txt\"]"))).getText();
-        String message;
+        String message = "좌석 예약 취소 실패";
         if (result.equals("좌석을 선택해주세요."))
             message = "좌석 예약 취소 완료";
-        else {
-            throw new BaseException(FAILED_TO_CANCEL_SEAT);
-        }
         return message;
-
     }
 
     public String bookedSeat(WebDriver driver) throws BaseException {
@@ -300,7 +298,7 @@ public class SeleniumAct {
         options.addArguments("no-sandbox"); // Bypass OS security model
         options.addArguments("disable-dev-shm-usage"); // overcome limited resource problems
         options.addArguments("lang=ko");
-//        options.addArguments("headless"); // !headless!
+        options.addArguments("headless"); // !headless!
 
         WebDriver driver = new ChromeDriver(options);
         Duration waitTime = Duration.ofSeconds(10);

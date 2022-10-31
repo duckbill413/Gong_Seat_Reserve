@@ -62,3 +62,4 @@ Quartz/quartz/src/main/resources/application.properties
 Quartz/quartz-test/src/main/resources/quartz.properties
 SeatReservation/src/main/resources/application.yml
 SeatReservation/src/main/resources/firebase/firebase_service_key.json
+SeatReservation/test.http
