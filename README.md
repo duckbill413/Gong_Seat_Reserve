@@ -25,8 +25,9 @@
 ## 서버(Spring)
 - Selenium을 이용하여 웹 탐색 및 예약 처리
 - 스프링 배치 활용
+  - 좌석 예약 시간 06:50, 07:00에 예약 실행  
 - 안드로이드 연동 구성
-- RESTful API 설계
+- API 설계
 - 예약 결과 및 좌석 정보 알림(FCM), 이메일 전송(spring-mail)
 
 ### Database - MySQL, RDS
